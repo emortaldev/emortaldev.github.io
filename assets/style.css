@@ -1,0 +1,99 @@
+:root {
+    --text-color: #000000;
+    --link-color: #0000ee;
+}
+
+*, *::before,*::after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    max-width: 768px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 12px 6px;
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a, a:visited {
+    color: var(--link-color);
+}
+
+a:active, a:hover {
+    color: #ffffff;
+    background-color: var(--link-color);
+}
+
+p, ul, ol, hr, section {
+    margin: 12px 0;
+}
+
+li {
+    list-style-type: square;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    margin: 0.25rem 0;
+}
+
+h1 {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+h1::after {
+    content: "=================================================";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+
+h2::before {
+    content: "### ";
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #eeeeee;
+        --link-color: #0392da;
+    }
+
+    body {
+        background: #000000;
+        color: var(--text-color);
+    }
+
+    input,
+    select {
+        background-color: #111111;
+        border-color: #343434;
+        border-style: solid;
+        border-radius: 2px;
+        color: var(--text-color);
+    }
+
+    hr {
+        filter: brightness(0.3);
+    }
+}
