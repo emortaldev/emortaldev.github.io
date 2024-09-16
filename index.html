@@ -7,15 +7,21 @@
 
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>emortal's homepage</h1>
   <p>
-    Heyo! 👋 I'm emortal<br>
+    <h1 style="transform: translateX(50%);">Hey! 👋 I'm <span class="name-gradient">emortal</span></h1>
+    <br>
     I develop things, usually related to Minecraft. I also dabble in motion design.
-    I am interested in user design, user experience and game design. Game development generally is pretty cool!!<br>
+    I am interested in user design, user experience and game development.
   </p>
+
+  <hr>
 
   <h2>Projects</h2>
   <ul>
@@ -31,12 +37,32 @@
     <li>Beginner: Rust</li>
   </ul>
 
-  <h2>📞 Contacts</h2>
-  <ul>
-    <li>GitHub: <a target="_blank" rel="noreferrer" href="https://github.com/emortaldev">@emortaldev</a></li>
-    <li>Discord: <a target="_blank" rel="noreferrer" href="https://discord.com/users/308243797744025600">@emortaldev</a></li>
-    <li>YouTube: <a target="_blank" rel="noreferrer" href="https://youtube.com/emortal">@emortal</a></li>
-  </ul>
+  <h2>📞 Contact</h2>
+  <br>
+  <div class="social-container">
+    <a class="social-block" target="_blank" rel="noreferrer" href="https://github.com/emortaldev/">
+      <div class="social-block">
+        <img style="vertical-align: middle" src="assets/github-mark-white.svg" alt="GitHub Logo" width="20">
+        GitHub
+      </div>
+    </a>
+
+    <a class="social-block" target="_blank" rel="noreferrer" href="https://discord.gg/NREEP7RH8y">
+      <div class="social-block">
+        <img style="vertical-align: middle" src="assets/discord-mark-white.svg" alt="Discord Logo" width="20">
+        Discord
+      </div>
+    </a>
+
+    <a class="social-block" target="_blank" rel="noreferrer" href="https://youtube.com/emortal">
+      <div class="social-block">
+        <img style="vertical-align: middle" src="assets/youtube_social_icon_red.png" alt="YouTube Logo" width="20">
+        YouTube
+      </div>
+    </a>
+
+  </div>
+
 
   <h2>🫂 Friends</h2>
   <ul>
@@ -44,28 +70,18 @@
     <li><a target="_blank" rel="noreferrer" href="https://codyq.dev">Cody</a></li>
   </ul>
 
-  <h2>❤️ Favorite Songs</h2>
-  <ul>
-    <li>(all of) A Beacon School - <a target="_blank" rel="noreferrer" href="https://abeaconschool.bandcamp.com/track/its-late/">It's Late</a>, <a target="_blank" rel="noreferrer" href="https://abeaconschool.bandcamp.com/track/potion/">Potion</a></li>
-    <li>C418 - <a target="_blank" rel="noreferrer" href="https://c418.bandcamp.com/track/taswell">Taswell</a>, <a target="_blank" rel="noreferrer" href="https://c418.bandcamp.com/track/aria-math">Aria Math</a></li>
-    <li>upusen - <a target="_blank" rel="noreferrer" href="https://upusen.bandcamp.com/track/flower-club">Flower Club</a>, <a target="_blank" rel="noreferrer" href="https://upusen.bandcamp.com/track/phone-call">Phone Call</a></li>
-    <li>Michael Wyckoff - <a target="_blank" rel="noreferrer" href="https://michaelwyckoff.bandcamp.com/track/ambient-travel">Ambient Travel</a>, <a target="_blank" rel="noreferrer" href="https://michaelwyckoff.bandcamp.com/track/analog-sunrise">Analog Sunrise</a></li>
-  </ul>
 
-  <!--
-    88x31 sources:
-    http://www.88x31.nl/index.html
-    https://cyber.dabamos.de/88x31/index.html
-    https://anlucas.neocities.org/88x31Buttons
-    https://neonaut.neocities.org/cyber/88x31
-    https://paintkiller.neocities.org/new/88x31
-  -->
-    
+  <h2>❤️ Favorite Songs</h2>
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=551760206/size=small/bgcol=333333/linkcol=fe7eaf/transparent=true/" seamless><a href="https://c418.bandcamp.com/album/minecraft-volume-beta">Minecraft - Volume Beta by C418</a></iframe>
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1867938040/size=small/bgcol=333333/linkcol=fe7eaf/transparent=true/" seamless><a href="https://abeaconschool.bandcamp.com/album/cola">Cola by A Beacon School</a></iframe>
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=448963597/size=small/bgcol=333333/linkcol=fe7eaf/track=338650508/transparent=true/" seamless><a href="https://upusen.bandcamp.com/album/tea-is-too-hot">tea is too hot by upusen</a></iframe>
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3194125999/size=small/bgcol=333333/linkcol=fe7eaf/track=1452954456/transparent=true/" seamless><a href="https://upusen.bandcamp.com/album/birds">Birds by upusen</a></iframe>
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1045352317/size=small/bgcol=333333/linkcol=fe7eaf/track=2630493314/transparent=true/" seamless><a href="https://michaelwyckoff.bandcamp.com/album/bonetones-the-boneworks-ost">Bonetones: The Boneworks OST by Michael Wyckoff</a></iframe>
+
+
   <h2>😼 My cat</h2>
   <div>
-    <img src="assets/cat.webp" alt="My cat" width="400">
+    <img src="assets/cat.webp" alt="My cat" width="300">
   </div>
-  
-  <br>Website design stolen from Cody @ <a href="https://codyq.dev">codyq.dev</a>
 
 </body></html>

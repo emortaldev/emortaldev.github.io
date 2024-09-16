@@ -1,6 +1,6 @@
 :root {
     --text-color: #000000;
-    --link-color: #0000ee;
+    --link-color: #ff88ff;
 }
 
 *, *::before,*::after {
@@ -13,7 +13,7 @@
 }
 
 html {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Inter', system-ui;
     font-size: 14px;
     box-sizing: border-box;
     height: 100%;
@@ -53,34 +53,54 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     position: relative;
     display: inline-block;
-    margin: 0.25rem 0;
 }
 
 h1 {
     padding-bottom: 1rem;
     margin-bottom: 0;
     overflow: hidden;
+    font-size: 3rem;
 }
 
-h1::after {
-    content: "=================================================";
-    position: absolute;
-    left: 0;
-    top: 1rem;
+h2 {
+    font-size: 1.75rem;
+    position: relative;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-h2::before {
-    content: "### ";
+h3 {
+    font-size: 1.5rem;
+}
+
+.social-block {
+    display: inline-table;
+    margin: 0.3rem;
+    --link-color: #eeeeee;
+}
+.social-block:hover {
+    color: #ffffff;
+    background-color: #550055;
+    border-radius: 7px;
+}
+
+.name-gradient {
+    font-weight: bolder;
+    background: linear-gradient(90deg, rgba(255,65,241,1) 0%, rgba(255,164,52,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --text-color: #eeeeee;
-        --link-color: #0392da;
+        --link-color: #ff88ff;
     }
 
     body {
-        background: #000000;
+        background: #0E0411;
         color: var(--text-color);
     }
 
@@ -94,6 +114,6 @@ h2::before {
     }
 
     hr {
-        filter: brightness(0.3);
+        filter: brightness(0.2);
     }
 }
