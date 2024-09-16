@@ -1,15 +1,10 @@
-:root {
-    --text-color: #000000;
-    --link-color: #ff88ff;
-}
-
 *, *::before,*::after {
     box-sizing: inherit;
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -41,16 +36,15 @@ a:active, a:hover {
     background-color: var(--link-color);
 }
 
-p, ul, ol, hr, section {
+p, ol, hr, section {
     margin: 12px 0;
 }
 
 li {
-    list-style-type: square;
+    list-style-type: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-size: 1rem;
     position: relative;
     display: inline-block;
 }
@@ -66,8 +60,8 @@ h2 {
     font-size: 1.75rem;
     position: relative;
     display: inline-block;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -85,6 +79,12 @@ h3 {
     border-radius: 7px;
 }
 
+.center {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
 .name-gradient {
     font-weight: bolder;
     background: linear-gradient(90deg, rgba(255,65,241,1) 0%, rgba(255,164,52,1) 100%);
@@ -93,27 +93,25 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: #eeeeee;
-        --link-color: #ff88ff;
-    }
+:root {
+    --text-color: #eeeeee;
+    --link-color: #ff88ff;
+}
 
-    body {
-        background: #0E0411;
-        color: var(--text-color);
-    }
+body {
+    background: #0E0411;
+    color: var(--text-color);
+}
 
-    input,
-    select {
-        background-color: #111111;
-        border-color: #343434;
-        border-style: solid;
-        border-radius: 2px;
-        color: var(--text-color);
-    }
+input,
+select {
+    background-color: #111111;
+    border-color: #343434;
+    border-style: solid;
+    border-radius: 2px;
+    color: var(--text-color);
+}
 
-    hr {
-        filter: brightness(0.2);
-    }
+hr {
+    filter: brightness(0.2);
 }
