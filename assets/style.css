@@ -1,25 +1,15 @@
-*, *::before,*::after {
-    box-sizing: inherit;
-}
 
-* {
-    padding: 0;
-    margin: 0;
-}
 
 html {
     font-family: 'Inter', system-ui;
-    font-size: 14px;
-    box-sizing: border-box;
-    height: 100%;
+    font-size: 1rem;
 }
 
 body {
-    max-width: 768px;
+    max-width: 1100px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 12px 6px;
-    color: var(--text-color);
 }
 
 img {
@@ -53,7 +43,7 @@ h1 {
     padding-bottom: 1rem;
     margin-bottom: 0;
     overflow: hidden;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h2 {
@@ -80,7 +70,6 @@ h3 {
 }
 
 .center {
-    margin: auto;
     width: 100%;
     text-align: center;
 }
@@ -91,6 +80,54 @@ h3 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.glow {
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+.scroll-menu {
+    overflow: auto;
+    white-space: nowrap;
+    position: relative;
+    padding: 0.25em;
+}
+.scroll-menu-item {
+    width: 16em;
+    margin: 0.5em;
+    display: inline-grid;
+}
+.scroll-menu-item img {
+    border-radius: 0.5em;
+}
+.scroll-menu-item h2 {
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+    white-space: normal;
+}
+.scroll-menu-item p {
+    font-size: 1rem;
+    display: block;
+    word-break: break-word;
+    white-space: normal;
+    margin: 0;
+    --link-color: #ffffff;
+}
+
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 0.2em #fff, 0 0 0.4em #ff00ff, 0 0 0.6em #ff00ff, 0 0 0.7em #ff00ff, 0 0 0.2em #ff00ff, 0 0 0.4em #ff00ff, 0 0 0.5em #ff00ff;
+    }
+
+    to {
+        text-shadow: 0 0 0.2em #fff, 0 0 0.4em #FF7F00, 0 0 0.6em #FF7F00, 0 0 0.7em #FF7F00, 0 0 0.2em #FF7F00, 0 0 0.4em #FF7F00, 0 0 0.5em #FF7F00;
+    }
 }
 
 :root {
@@ -114,4 +151,32 @@ select {
 
 hr {
     filter: brightness(0.2);
+}
+
+.squiggly {
+    position: relative;
+    height: 18px;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.squiggly::after,
+.squiggly::before {
+    height: inherit;
+    width: inherit;
+    background-size: 18px 100%; /* Change this to adjust the size of the squiggly line. */
+    content: "";
+    position: absolute;
+}
+
+.squiggly::before {
+    top: -2px;
+    background-image: linear-gradient(45deg, #550055 35%, transparent 0),
+    linear-gradient(-45deg, #550055 35%, transparent 0);
+}
+
+.squiggly::after {
+    top: 0;
+    background-image: linear-gradient(45deg, #0E0411 35%, transparent 0),
+    linear-gradient(-45deg, #0E0411 35%, transparent 0);
 }
