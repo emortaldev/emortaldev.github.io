@@ -85,15 +85,24 @@ h3 {
     animation: glow 3s ease-in-out infinite alternate;
 }
 
-.scroll-menu-item {
-    width: 15em;
+@media only screen and (max-width: 950px) {
+    .scroll-menu {
+        overflow: auto;
+        white-space: nowrap;
+        position: relative;
+        padding: 0.25em;
+    }
+}
+
+.grid-menu-item {
+    width: 15.9em;
     margin: 0.5em;
     display: inline-grid;
 }
-.scroll-menu-item img {
+.grid-menu-item img {
     border-radius: 0.5em;
 }
-.scroll-menu-item h2 {
+.grid-menu-item h2 {
     font-size: 1.5rem;
     display: block;
     margin-top: 1rem;
@@ -101,7 +110,7 @@ h3 {
     word-break: break-word;
     white-space: normal;
 }
-.scroll-menu-item p {
+.grid-menu-item p {
     font-size: 1rem;
     display: block;
     word-break: break-word;
