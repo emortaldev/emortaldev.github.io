@@ -22,16 +22,12 @@ a, a:visited {
 }
 
 a:active, a:hover {
-    color: #ffffff;
+    color: #0E0411;
     background-color: var(--link-color);
 }
 
 p, ol, hr, section {
     margin: 12px 0;
-}
-
-li {
-    list-style-type: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,8 +55,9 @@ h3 {
 }
 
 .social-block {
-    display: inline-table;
-    margin: 0.3rem;
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.2rem;
     --link-color: #eeeeee;
 }
 .social-block:hover {
@@ -88,14 +85,8 @@ h3 {
     animation: glow 3s ease-in-out infinite alternate;
 }
 
-.scroll-menu {
-    overflow: auto;
-    white-space: nowrap;
-    position: relative;
-    padding: 0.25em;
-}
 .scroll-menu-item {
-    width: 16em;
+    width: 15em;
     margin: 0.5em;
     display: inline-grid;
 }
@@ -137,15 +128,6 @@ h3 {
 
 body {
     background: #0E0411;
-    color: var(--text-color);
-}
-
-input,
-select {
-    background-color: #111111;
-    border-color: #343434;
-    border-style: solid;
-    border-radius: 2px;
     color: var(--text-color);
 }
 
